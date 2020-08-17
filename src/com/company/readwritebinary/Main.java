@@ -25,11 +25,11 @@ public class Main {
 	    // Writing Data
         try (DataOutputStream locFile = new DataOutputStream(new BufferedOutputStream(new FileOutputStream("data.dat")))) {
 
-            locFile.writeUTF("Hi Jeff");
+            locFile.writeUTF("Jeff");
             locFile.writeInt(79);
             locFile.writeChar('M');
 
-            locFile.writeUTF("Hi Billie");
+            locFile.writeUTF("Billie");
             locFile.writeInt(60);
             locFile.writeChar('F');
 
