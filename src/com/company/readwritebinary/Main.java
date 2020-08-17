@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Main {
 
     public static void main(String[] args) {
@@ -43,7 +42,6 @@ public class Main {
         char sex = 0;
         List<Person> people = new ArrayList<>();
 
-
         try (DataInputStream locFile = new DataInputStream(new BufferedInputStream(new FileInputStream("data.dat")))) {
 
             boolean eof = false;
@@ -58,15 +56,13 @@ public class Main {
                 eof = true;
             }
 
-
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+        // Print out People list
         for (Person person : people) {
             System.out.println("Name : " + person.name + " age: " + person.age + " sex: " + person.sex);
-
         }
-
     }
 }
