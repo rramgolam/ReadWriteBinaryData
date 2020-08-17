@@ -11,9 +11,9 @@ public class Main {
 
         // Inner class for a Person
         class Person {
-            public String name;
-            public int age;
-            public char sex;
+            private String name;
+            private int age;
+            private char sex;
 
             public Person(String name, int age, char sex) {
                 this.name = name;
@@ -32,7 +32,6 @@ public class Main {
             locFile.writeUTF("Hi Billie");
             locFile.writeInt(60);
             locFile.writeChar('F');
-
 
         } catch (IOException e) {
             e.printStackTrace();
